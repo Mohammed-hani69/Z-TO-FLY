@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="Z.css">
+    <title>Z-to fly</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+        *{
+            font-family: 'Poppins', sans-serif;
+        font-family: 'Work Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        
+        }
+        
+        header{
+            background-color: #f0f0f0;
+            width: 100%;
+            height: 11%;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 200px 0px 200px;
+        
+        }
+        
+        .logo{
+            text-decoration: none;
+            color: #09139c;
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 2.3em;
+           
+        
+        }
+        .navigation a{
+            color: #09139c;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 700;
+            padding-left: 30px;
+        
+        }
+        .navigation a:hover{
+            color: rgb(207, 26, 224);
+        }
+        
+        
+        section{
+            padding: 200px 200px;
+        }
+        
+        .main{
+            /*width: 100px;
+            min-height: 100vh;
+            display: flex;*/
+            align-items: center;
+            background: url(الصور/a15.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 300px 100px;
+            
+        }
+        
+        .main h2{
+            color:#fffefe;
+            font-size: 3em;
+            font-weight: 600;
+            margin-bottom: 2%;
+            margin-top: -8%;
+        
+        }
+        
+        /*.main h3{
+            color:#fffefe;
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 2%;
+        }*/
+        .main h5{
+            color:#fffefe;
+            font-size: 1.5em;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+        
+        .main-btn{
+            color: #fffefe;
+            background-color: #09139c;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-top: 30px;
+            display: inline-block;
+            padding: 0.9375em 2.1875em;
+            letter-spacing: 1px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            margin-top: 143px;
+            transition: 0.7s ease;
+        
+        }
+        
+        .main-btn:hover{
+            background-color: #3a6cf4;
+            transform: scale(1.1);
+        }
+        
+        .social-icons a{
+            color: #ffff;
+            font-size: 1.7em;
+            padding-right: 30px;
+        }
+        
+        .title{
+            display: flex;
+            justify-content: center;
+            color: #09139c;
+            font-size: 2.2em;
+            font-weight: 800;
+            margin-bottom: 30px;
+        
+        }
+        
+        .content{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        
+        }
+        
+        .card{
+            background-color: #fff;
+            width: 21.25em;
+            box-shadow: 0 8px 25px rgba(1 1 1 /20%);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 15px;
+            transition: 0.7s ease;
+        }
+        
+        .card:hover{
+            transform: scale(1.1);
+        }
+        
+        .img{
+            text-align: center;
+        }
+        
+        .info h3{
+            color: #09139c;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin: 10px;
+            text-align: center;
+        }
+        .Hotels{
+            background-color: #000016;
+        
+        }
+        .Contact{
+            background: #000016;
+        }
+        
+         .content{
+            margin-top: 30px;
+        }
+        .Hotels  .title{
+            color: #fff;
+        }
+        
+        .icon{
+            color: #09139c;
+            font-size: 8em;
+            text-align: center;
+            
+        }
+        .Contact  .title{
+            color: #fff;
+        }
+        .Contact .icon{
+            font-size: 4.5em;
+        
+        }
+        .Contact .info h3{
+            color: #000;
+        }
+        
+        .Contact .info p{
+            font-size: 1.5em;
+            text-align: center;
+        }
+        
+        .footer{
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-title{
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        .footer-title span{
+            color: #09139c;
+        }
+        .footer .social-icons{
+            padding-right: 80em;
+        }
+        
+        @media(max-width:1023px){
+            header{
+                padding: 12px 20px;
+            }
+            .navigation{
+                padding-left: 10px;
+            }
+        
+            .title{
+                font-size: 1.8em;
+            }
+        
+            section{
+                padding: 80px 20px;
+        
+            }
+        
+            .main-content h2{
+                font-size: 1em;
+            }
+            .main-content h3{
+                font-size: 1.6em;
+            }
+        
+            .content{
+                flex-direction: column;
+                align-items: center;
+        
+            }
+            
+        
+        }
+        
+        @media (max-width:641px){
+            body{
+                font-size: 12px;
+            }
+        
+            .main-content h2{
+                font-size: 0.8em;
+        
+            }
+        
+            .main-content h3{
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width:300px){
+            body{
+                font-size: 10px;
+                    
+            }
+        }
+        
+        </style>
+</head>
+<body>
+<!--header-->
+    <header>
+        <a href="" class="logo"> Z-TO FLY</a>
+        <nav class="navigation">
+            <a href="#Flights">Flights</a>
+            <a href="#Hotels">Hotels</a>
+            <a href="#Car Hire">Car Hire</a>
+            <a href="#contact">Contact</a>
+            
+        </nav>
+    </header>
+<!--home page-->
+    <section class="main">
+        <div>
+            <center>
+                <h2>The best flight deals to everywhere, from anywhere</h2>
+                <!--<h3>Flight deals from Egypt</h3>-->
+                <h5>Here are the flight deals with the lowest prices. Act fast – they all depart within the next three months.</h5>
+            </center>
+            
+            <a href="#Flights" class="main-btn">Search Flights</a>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                
+            </div>
+        </div>
+<!--cards flights -->
+    </section>
+
+    <section class="cards" id="Flights">
+        <h2 class="title">Flights</h2>
+        <div class="content">
+            <div class="card">
+            <div class="img">
+                <img src="الصور/abu dhabi.jpg">
+                
+            </div>
+            <div class="info">
+                <h3>Abu Dhabi</h3>
+                <p>Round trip from Cairo airport to Abu Dhabi airport</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/maldives2.jpg">
+            </div>
+            <div class="info">
+                <h3>Maldives</h3>
+                <p>Round trip from Cairo airport to Maldives airport</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/Dubai.jpg">
+            </div>
+            <div class="info">
+                <h3>Dubai</h3>
+                <p>Round trip from Cairo airport to Dubai airport</p>
+            </div>
+        </div>
+        
+        </div>
+        <div class="content">
+            <div class="card">
+            <div class="img">
+                <img src="الصور/Paris.jpg">
+                
+            </div>
+            <div class="info">
+                <h3>Paris</h3>
+                <p>Round trip from Cairo airport to Paris airport</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/Sharm El-Shaikh.jpg">
+            </div>
+            <div class="info">
+                <h3>Sharm El-Shaikh</h3>
+                <p>Round trip from Cairo airport to Sharm El-Shaikh airport</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/Dahab.jpg">
+            </div>
+            <div class="info">
+                <h3>Dahab</h3>
+                <p>Round trip from Cairo airport to Dahab airport</p>
+            </div>
+        </div>
+        
+        </div>
+        <div class="content">
+            <div class="card">
+            <div class="img">
+                <img src="الصور/Istanbul.jpg">
+                
+            </div>
+            <div class="info">
+                <h3>Istanbul</h3>
+                <p>Round trip from Cairo airport to Istanbul airport</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/Jeddah.jpg">
+            </div>
+            <div class="info">
+                <h3>Jeddah</h3>
+                <p>Round trip from Cairo airport to Jeddah airport</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/Rabat.jpg">
+            </div>
+            <div class="info">
+                <h3>Rabat</h3>
+                <p>Round trip from Cairo airport to Rabat airport</p>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+
+<!--cards hotels -->   
+
+    <section class="Hotels" id="Hotels">
+        <h2 class="title">Hotels</h2>
+        <div class="content" id="bg">
+            <div class="card">
+                <div class="img">
+                    <img src="الصور/Novotel Abu Dhabi Al Bustan.jpg">
+                    
+                </div>
+                <div class="info">
+                    <h3>Novotel Abu Dhabi Al Bustan</h3>
+                    <p>Feel like a star and enjoy the upscale treatment and services at Novotel Abu Dhabi Al Bustan
+                        You are eligible for a Genius discount at Novotel Abu Dhabi Al Bustan! Simply sign in to save at this property.</p>
+                </div>
+            </div>
+                <div class="card">
+                <div class="img">
+                    <img src="الصور/JOALI Maldives.jpg">
+                </div>
+                <div class="info">
+                    <h3>JOALI Maldives</h3>
+                    <p>Feel like a star and enjoy the upscale treatment and services at JOALI Maldives
+                        You are eligible for Genius discount at JOALI Maldives! Simply sign in to save to this property.</p>
+                </div>
+            </div>
+                <div class="card">
+                <div class="img">
+                    <img src="الصور/Kempinski.jpg">
+                </div>
+                <div class="info">
+                    <h3>Kempinski</h3>
+                    <p>Feel like a star and enjoy the upscale treatment and services at Kempinski Hotel Mall of the Emirates
+                        You are eligible for a Genius discount at Kempinski Hotel Mall of the Emirates! Simply sign in to save at this property.</p>
+                </div>
+            </div>
+            
+            </div>
+            <div class="content">
+                <div class="card">
+                <div class="img">
+                    <img src="الصور/Kimpton St Honoré Paris‬.jpg">
+                    
+                </div>
+                <div class="info">
+                    <h3>Kimpton St Honoré Paris</h3>
+                    <p>Feel like a star and enjoy the upscale treatment and services at Kimpton St Honoré Paris
+                        You are eligible for Genius discount at Kimpton St Honoré Paris! Simply sign in to save to this property.</p>
+                </div>
+            </div>
+                <div class="card">
+                <div class="img">
+                    <img src="الصور/Savoy.jpg">
+                </div>
+                <div class="info">
+                    <h3>Savoy</h3>
+                    <p>Feel like a star and enjoy the upscale treatment and services at Savoy
+                        You are eligible for Genius discount at Savoy! Simply sign in to save to this property.</p>
+                </div>
+            </div>
+                <div class="card">
+                <div class="img">
+                    <img src="الصور/Lagona Dahab Hotel.jpg">
+                </div>
+                <div class="info">
+                    <h3>Lagona Dahab Hotel</h3>
+                    <p>Feel like a star and enjoy the upscale treatment and services at Lagona Dahab Hotel
+                        You are eligible for Genius discount at Lagona Dahab Hotel! Simply sign in to save to this property.</p>
+                </div>
+            </div>
+            
+            </div>
+            <div class="content">
+                <div class="card">
+                <div class="img">
+                    <img src="الصور/Cvk park bosphorus hotel istanbul.jpg">
+                    
+                </div>
+                <div class="info">
+                    <h3>Cvk park bosphorus hotel istanbul</h3>
+                    <p>Feel like a star and enjoy the upscale treatment and services at Cvk park bosphorus hotel istanbul
+                        You are eligible for Genius discount at Cvk park bosphorus hotel istanbul! Simply sign in to save to this property.</p>
+                </div>
+            </div>
+                <div class="card">
+                <div class="img">
+                    <img src="الصور/Intercontinental Hotel Jeddah.jpg">
+                </div>
+                <div class="info">
+                    <h3>Intercontinental Hotel Jeddah</h3>
+                    <p>Feel like a star and enjoy the upscale treatment and services at Intercontinental Hotel Jeddah
+                        You are eligible for Genius discount at Intercontinental Hotel Jeddah! Simply sign in to save to this property.</p>
+                </div>
+            </div>
+                <div class="card">
+                <div class="img">
+                    <img src="الصور/La Villa Mandarine.jpg">
+                </div>
+                <div class="info">
+                    <h3>La Villa Mandarine</h3>
+                    <p>Feel like a star and enjoy the upscale treatment and services at La Villa Mandarine
+                        You are eligible for Genius discount at La Villa Mandarine! Simply sign in to save to this property.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!--Cards Car Hire-->    
+
+<section class="Car Hire" id="Car Hire">
+    <h2 class="title">Car Hire</h2>
+    <div class="content">
+        <div class="card">
+            <div class="img">
+                <img src="الصور/Toyota Corolla 2022.jpg">
+                
+            </div>
+            <div class="info">
+                <h3>Toyota Corolla</h3>
+                <p>Compare the biggest car rental brands and book online in a few simple steps. Unbeatable prices. There are no credit card fees.</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/hyundai elantra n 2022.jpg">
+            </div>
+            <div class="info">
+                <h3>hyundai elantra</h3>
+                <p>Compare the biggest car rental brands and book online in a few simple steps. Unbeatable prices. There are no credit card fees.</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/NISSAN.jpg">
+            </div>
+            <div class="info">
+                <h3>NISSAN</h3>
+                <p>Compare the biggest car rental brands and book online in a few simple steps. Unbeatable prices. There are no credit card fees.</p>
+            </div>
+        </div>
+        
+        </div>
+        <div class="content">
+            <div class="card">
+            <div class="img">
+                <img src="الصور/CHEVROLET.jpg">
+                
+            </div>
+            <div class="info">
+                <h3>CHEVROLET</h3>
+                <p>Compare the biggest car rental brands and book online in a few simple steps. Unbeatable prices. There are no credit card fees.</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/BMW.jpg">
+            </div>
+            <div class="info">
+                <h3>BMW</h3>
+                <p>Compare the biggest car rental brands and book online in a few simple steps. Unbeatable prices. There are no credit card fees.</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/mercedes.jpg">
+            </div>
+            <div class="info">
+                <h3>Mercedes</h3>
+                <p>Compare the biggest car rental brands and book online in a few simple steps. Unbeatable prices. There are no credit card fees.</p>
+            </div>
+        </div>
+        
+        </div>
+        <div class="content">
+            <div class="card">
+            <div class="img">
+                <img src="الصور/rolls royce.jpg">
+                
+            </div>
+            <div class="info">
+                <h3>Rolls Royce</h3>
+                <p>Compare the biggest car rental brands and book online in a few simple steps. Unbeatable prices. There are no credit card fees.</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/lamborghini.jpg">
+            </div>
+            <div class="info">
+                <h3>Lamborghini</h3>
+                <p>Compare the biggest car rental brands and book online in a few simple steps. Unbeatable prices. There are no credit card fees.</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="img">
+                <img src="الصور/KIA.jpg">
+            </div>
+            <div class="info">
+                <h3>KIA</h3>
+                <p>Compare the biggest car rental brands and book online in a few simple steps. Unbeatable prices. There are no credit card fees.</p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+<!--cards Contact -->   
+
+<section class="Contact" id="contact">
+    <h2 class="title">Contact</h2>
+    <div class="content" id="bg">
+        <div class="card">
+            <div class="icon">
+                <i class="fas fa-phone"></i>
+                
+            </div>
+            <div class="info">
+                <h3>phone</h3>
+                <p>+201105021003</p>
+            </div>
+        </div>
+            <div class="card">
+            <div class="icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info">
+            <h3>Email</h3>
+            <p>Contact@Z-TO FLY</p>
+        </div>
+    </div>
+</div>
+
+</section>
+<!--footer-->
+<footer class="footer">
+    <p class="footer-title">Copyrights@<span>Mohamed Hani Abdellaziz</span></p>
+    <div class="social-icons"></div>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-solid fa-phone"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+</footer>
+</body>
+</html>
